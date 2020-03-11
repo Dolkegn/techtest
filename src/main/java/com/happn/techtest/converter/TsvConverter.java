@@ -22,6 +22,13 @@ public class TsvConverter {
 	private static final String ROW_PATTERN = "^(?<id>.*)\\s+(?<latitude>[-+]?[0-9]*\\.?[0-9]+)\\s+(?<longitude>[-+]?[0-9]*\\.?[0-9]+)";
 	private static final Pattern pattern = Pattern.compile(ROW_PATTERN);
 
+	/**
+	 * Transforme un fichier tsv en Liste de {@link POI}
+	 * 
+	 * @param tsvFile le fichier d'entrée contenant des POI
+	 * @return la liste de {@link POI}
+	 * @throws FileNotFoundException si le fichier n'est pas trouvé
+	 */
 	public static List<POI> tsvToPois(File tsvFile) throws FileNotFoundException {
 		TsvParserSettings settings = new TsvParserSettings();
 		TsvParser parser = new TsvParser(settings);

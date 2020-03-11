@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.happn.techtest.model.Zone;
 
 class JsonConverterTest {
@@ -18,8 +17,6 @@ class JsonConverterTest {
 
 		try {
 			assertEquals(expectedZone, JsonConverter.jsonToZone(json));
-		} catch (JsonMappingException e) {
-			fail("Shouldn't get a JsonMappingException : " + e.getMessage());
 		} catch (JsonProcessingException e) {
 			fail("Shouldn't get a JsonProcessingException : " + e.getMessage());
 		}
@@ -32,8 +29,6 @@ class JsonConverterTest {
 
 		try {
 			assertEquals(expectedZone, JsonConverter.jsonToZone(json));
-		} catch (JsonMappingException e) {
-			fail("Shouldn't get a JsonMappingException : " + e.getMessage());
 		} catch (JsonProcessingException e) {
 			fail("Shouldn't get a JsonProcessingException : " + e.getMessage());
 		}
@@ -46,8 +41,6 @@ class JsonConverterTest {
 
 		try {
 			assertEquals(expectedZone, JsonConverter.jsonToZone(json));
-		} catch (JsonMappingException e) {
-			fail("Shouldn't get a JsonMappingException : " + e.getMessage());
 		} catch (JsonProcessingException e) {
 			fail("Shouldn't get a JsonProcessingException : " + e.getMessage());
 		}
@@ -60,8 +53,6 @@ class JsonConverterTest {
 
 		try {
 			assertEquals(expectedZone, JsonConverter.jsonToZone(json));
-		} catch (JsonMappingException e) {
-			fail("Shouldn't get a JsonMappingException : " + e.getMessage());
 		} catch (JsonProcessingException e) {
 			fail("Shouldn't get a JsonProcessingException : " + e.getMessage());
 		}
@@ -74,8 +65,6 @@ class JsonConverterTest {
 
 		try {
 			assertEquals(expectedZone, JsonConverter.jsonToZone(json));
-		} catch (JsonMappingException e) {
-			fail("Shouldn't get a JsonMappingException : " + e.getMessage());
 		} catch (JsonProcessingException e) {
 			fail("Shouldn't get a JsonProcessingException : " + e.getMessage());
 		}

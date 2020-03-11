@@ -2,6 +2,12 @@ package com.happn.techtest.model;
 
 import java.util.Objects;
 
+/**
+ * Point d'intéret.
+ * 
+ * @author genkl
+ *
+ */
 public class POI {
 	private String id;
 	private float latitude;

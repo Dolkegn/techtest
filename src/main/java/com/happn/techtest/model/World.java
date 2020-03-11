@@ -6,6 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Représente le monde. Contient les {@link Zone} et {@link POI} contenues dans
+ * ses frontières.
+ * 
+ * @author genkl
+ *
+ */
 public class World extends Zone {
 	private final float increment;
 	private Map<Zone, List<POI>> zonesWithInterest = new HashMap<>();

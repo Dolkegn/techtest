@@ -23,6 +23,7 @@ import com.happn.techtest.model.World;
 import com.happn.techtest.model.Zone;
 
 /**
+ * Classe principale. Contient la configuration pour le CLI.
  * 
  * @author genkl
  *
@@ -33,10 +34,6 @@ public class Main {
 	private static float zoneIncrement = 0.5f;
 
 	public static void main(String[] args) throws ParseException {
-		for (String arg : args) {
-			System.out.println("Argument = " + arg);
-		}
-
 		// Instanciation du monde
 		world = new World(-90, 90, -180, 180, zoneIncrement);
 		
