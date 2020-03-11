@@ -64,6 +64,9 @@ Le Main.java contient le traitement des entrants et la configuration du World pr
 Je pense qu'il faudrait découper un peu mieux cette partie. Extraire une partie générique et extraire les différentes configurations. Je pensais voir + en détail l'organisation du code et le découpage des classes lorsque je mettrai en place le service REST. Mais cela n'aura sans doute pas lieu, n'ayant pas eu le temps de retravailler sur le projet avant la deadline.
 Des classes de conversion JSON et TSV sont également présentes pour s'occuper de la transformation des données pour nourrir le WorldManager.
 
+# REST
+TODO
+
 # Conclusion
 Dans l'ensemble, j'ai tenté de créer une architecture qui soit évolutive, tout en restant efficace.
 En continuant de coder et en ajoutant des fonctionnalité ou des façons de présenter les données. L'archi évoluera forcément, mais les TU mis en place permettront de sécuriser ces refactorisations.
